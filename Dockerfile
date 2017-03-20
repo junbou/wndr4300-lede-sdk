@@ -14,4 +14,6 @@ RUN useradd -m mockbuilder && \
     sudo -iu mockbuilder rm -f $SDK.tar.xz &&\
     sudo -iu mockbuilder mv $SDK sdk
 
+ADD package.sh /home/mockbuilder/
+
 CMD ["sudo", "-iu", "mockbuilder", "bash"]
