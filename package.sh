@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ `whoami` != 'mockbulider' ]; then
+if [ `whoami` != 'mockbuilder' ]; then
   echo "Must be run as 'mockbuilder'!"
   exit 1
 fi
